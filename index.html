@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!--[if IE 7]>
-<html class="ie ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html class="ie ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 7) & !(IE 8)]><!-->
 <html>
 <!--<![endif]-->
 	<head>
@@ -13,18 +6,141 @@
 		<meta name="description" content="Brad and Mary 2017">
 		<meta name="keywords" content="Mary Mallard, Bradford Matton, Wedding">
 		<title>Brad &amp; Mary - 8/19/2017 </title>
-		<link href='https://fonts.googleapis.com/css?family=Abel|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
-		<link href="css/main.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700|Sacramento" rel="stylesheet">
+		<link href="style.css" rel="stylesheet" type="text/css">
 		<link rel="icon" type="image/png" href="favicon.png">
-		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
-		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="js/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="js/jquery-3.1.1.min.js"></script>
+
+		<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+		<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'EatDrinkAndBeMatton',
+        accessToken: '11050467.b601391.b74f81838a5e468ca6594496a43534b8',
+    });
+    feed.run();
+</script>
+
+		<script>
+			$( document ).ready(function() {
+			$(window).resize(function() {
+			    $('body').css("margin-top", $("#main-nav").outerHeight());
+			}).resize();
+			});
+		</script>
 	</head>
 	<body>
+		<nav id="main-nav">
+			<ul>
+				<li><a href="#ceremony">The Ceremony</a></li>
+				<li><a href="important-info.html">Important Info</a></li>
+				<li><a href="index.html"><img src="images/turtle-logo.png" class="turtle-logo"></a></li>
+				<li><a href="travel.html">Travel</a></li>
+				<li><a href="#photos">Photos</a></li>
+				<li><a href="">Registry</a></li>
+			</ul>
+		</nav>
 		<header>
+			<div class="container">
+				<div class="title">
+					<h1>Mary &amp; Brad</h1>
+					<p>are getting married <i class="fa fa-heart"></i> august 19th, 2017</p>
+				</div>
+			</div>
 		</header>
-		<section>
-			<h1>Coming Soon!</h1>
+		<section id="ceremony">
+			<div class="container">
+				<img src="images/h2-left.png" class="h2-lig"><h2>The Ceremony</h2><img src="images/h2-right.png" class="h2-lig">
+
+				<h3>The Important Address</h3>
+
+				<h4>Hilton Naples</h4>
+				<p>5111 Tamiami Trail N <br />
+				Naples, FL 34103</p>
+
+				<h3>Where Things are Happening:</h3>
+
+				<h4>Ceremony</h4>
+				<p>Mary &amp; Brad Say &ldquo;I Do!&rdquo;<br />
+				Vedado Beach, Naples<br />
+				5:30 pm</p>
+				<p class="details">Shuttles will be available to transport you to and from the ceremony site. Shuttles will leave from the hotel lobby at X:XXpm.<br/>
+				The ceremony is on the beach, so feel free to go barefoot when you get there or grab a pair of flip flops that will be waiting for you at the boardwalk!</p>
+
+				<h4>Cocktail Hour</h4>
+				<p>Mix and Mingle! <br />
+				Hilton Naples Lobby<br />
+				Immediately following ceremony</p>
+				<p class="details">Sip, snack, and chat while Mary and Brad have their closeups.</p>
+
+				<h4>Reception</h4>
+				<p>Let's Get Ready to Party!<br />
+				Hilton Naples Ballroom<br />
+				7:30pm - 10:30pm</p>
+				<p class="details">Dance the night away!</p>
+			</div>
 		</section>
+		<section id="weddingparty">
+			<div class="container">
+				<img src="images/h2-left-pink.png" class="h2-lig"><h2>The Wedding Party</h2><img src="images/h2-right-pink.png" class="h2-lig">
+				<h3>The Bridal Party:</h3>
+				<ul>
+					<li>
+						<img src="images/allie.png" alt="Allie Lynch">
+						<p><strong>ALLIE LYNCH</strong><br />
+						Maid of Honor</p>
+					</li>
+					<li>
+						<img src="images/amanda.png" alt="Amanda Couture">
+						<p><strong>AMANDA COUTURE</strong><br />
+						Bridesmaid</p>
+					</li>
+					<li>
+						<img src="images/erin.png" alt="Erin McGurgan">
+						<p><strong>ERIN MCGURGAN</strong><br />
+						Bridesmaid</p>
+					</li>
+					<li>
+						<img src="images/ashley.png" alt="Ashley Sampson">
+						<p><strong>ASHLEY SAMPSON</strong><br />
+						Bridesmaid</p>
+					</li>
+				</ul>
+				<h3>The Groom's Party</h3>
+				<ul>
+					<li>
+						<img src="images/jason.png" alt="Jason Skinner">
+						<p><strong>JASON SKINNER</strong><br />
+						Best Man</p>
+					</li>
+					<li>
+						<img src="images/kristopher.png" alt="Kristopher Nixon">
+						<p><strong>KRISTOPHER NIXON</strong><br />
+						Groomsman</p>
+					</li>
+					<li>
+						<img src="images/mike.png" alt="Mike MacCune">
+						<p><strong>MIKE MACCUNE</strong><br />
+						Groomsman</p>
+					</li>
+					<li>
+						<img src="images/stephen.png" alt="Stephen Fiske">
+						<p><strong>STEPHEN FISKE</strong><br />
+						Groomsman</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="photos">
+			<div class="container">
+				<h2>Photos</h2>
+				<div id="instafeed"></div>
+			</div>
+		</section>
+		<footer>
+		</footer>
 	</body>
 </html>
