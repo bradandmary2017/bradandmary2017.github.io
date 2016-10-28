@@ -265,13 +265,13 @@ img {
   text-align: center; }
   /* line 15, sass/_pages/_content.scss */
   .important_info h3 {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     border-bottom: 1px solid #1F3546;
     padding-bottom: .5em;
     display: inline-block; }
   /* line 22, sass/_pages/_content.scss */
   .important_info h4 {
-    margin-bottom: .5em; }
+    margin-bottom: 1em; }
   /* line 26, sass/_pages/_content.scss */
   .important_info p {
     line-height: 1.5;
@@ -288,12 +288,44 @@ img {
   /* line 42, sass/_pages/_content.scss */
   .important_info ul {
     list-style-type: disc;
-    margin-left: 2em;
-    margin-bottom: 1em; }
-    /* line 47, sass/_pages/_content.scss */
+    margin: 0 auto 1em;
+    list-style-position: inside; }
+    /* line 48, sass/_pages/_content.scss */
     .important_info ul li {
       line-height: 1.5; }
-  /* line 52, sass/_pages/_content.scss */
+    /* line 52, sass/_pages/_content.scss */
+    .important_info ul:last-child {
+      margin-bottom: 0; }
+  /* line 57, sass/_pages/_content.scss */
+  .important_info .playing_list {
+    margin-left: 1em; }
+    /* line 62, sass/_pages/_content.scss */
+    .important_info .playing_list li span {
+      position: relative;
+      left: -1em; }
+  /* line 69, sass/_pages/_content.scss */
+  .important_info .things_to_do {
+    display: flex;
+    margin-top: 1em; }
+  /* line 74, sass/_pages/_content.scss */
+  .important_info .item {
+    width: 25%;
+    vertical-align: top;
+    padding: 1.5em 1em;
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    margin: 0 .5em;
+    border-top: 2px solid #ffd7ec; }
+    /* line 84, sass/_pages/_content.scss */
+    .important_info .item a {
+      display: block;
+      margin-bottom: .875em;
+      font-size: .875em; }
+      /* line 88, sass/_pages/_content.scss */
+      .important_info .item a:last-child {
+        margin-bottom: 0; }
+  /* line 94, sass/_pages/_content.scss */
   .important_info .pink {
     background: #FFF0F8; }
 
