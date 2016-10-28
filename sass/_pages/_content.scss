@@ -3,6 +3,10 @@
 	color: #fff;
 	text-align: center;
 
+	i {
+		margin-bottom: .5em;
+	}
+
 	h1 {
 		font-size: 3em;
 	}
@@ -80,6 +84,10 @@
 		background: #fff;
 		margin: 0 .5em;
 		border-top: 2px solid darken($lightpink, 5%);
+
+		h4 {
+			font-size: 1em;
+		}
 
 		a {
 			display: block;
