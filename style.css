@@ -334,6 +334,20 @@ img {
   /* line 102, sass/_pages/_content.scss */
   .important_info .pink {
     background: #FFF0F8; }
+  /* line 108, sass/_pages/_content.scss */
+  .important_info .registry .logos {
+    margin-top: 1em; }
+  /* line 112, sass/_pages/_content.scss */
+  .important_info .registry img {
+    max-width: 250px;
+    height: auto;
+    max-height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1em; }
+    /* line 120, sass/_pages/_content.scss */
+    .important_info .registry img:hover {
+      opacity: .8; }
 
 /* line 11, sass/style.scss */
 .group:before,

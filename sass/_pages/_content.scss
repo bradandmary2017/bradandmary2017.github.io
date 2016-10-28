@@ -102,4 +102,24 @@
 	.pink {
 		background: $lightpink;
 	}
+
+	.registry {
+
+		.logos {
+			margin-top: 1em;
+		}
+
+		img {
+			max-width: 250px;
+			height: auto;
+			max-height: 100px;
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 1em;
+
+			&:hover {
+				opacity: .8;
+			}
+		}
+	}
 }
