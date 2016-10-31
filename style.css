@@ -128,7 +128,11 @@ img {
     /* line 21, sass/_pages/_index.scss */
     .main-header {
       min-height: 800px; } }
-  /* line 35, sass/_pages/_index.scss */
+  @media screen and (max-width: 480px) {
+    /* line 21, sass/_pages/_index.scss */
+    .main-header {
+      background-position: 90% 50%; } }
+  /* line 39, sass/_pages/_index.scss */
   .main-header h1 {
     text-indent: -9999px;
     margin: 0;
@@ -137,19 +141,50 @@ img {
     height: 180px;
     background: url("images/mary-brad-text-logo.png") no-repeat center center scroll;
     background-size: 100%; }
-  /* line 45, sass/_pages/_index.scss */
+    @media screen and (max-width: 768px) {
+      /* line 39, sass/_pages/_index.scss */
+      .main-header h1 {
+        margin: 0 auto;
+        display: block; } }
+    @media screen and (max-width: 560px) {
+      /* line 39, sass/_pages/_index.scss */
+      .main-header h1 {
+        width: 100%; } }
+  /* line 58, sass/_pages/_index.scss */
   .main-header p {
     font-size: 1.375em; }
-  /* line 49, sass/_pages/_index.scss */
+  /* line 62, sass/_pages/_index.scss */
   .main-header .title {
     text-align: center;
     max-width: 480px;
     display: inline-block; }
-  /* line 55, sass/_pages/_index.scss */
+    @media screen and (max-width: 560px) {
+      /* line 62, sass/_pages/_index.scss */
+      .main-header .title {
+        display: block; } }
+    @media screen and (max-width: 480px) {
+      /* line 71, sass/_pages/_index.scss */
+      .main-header .title i {
+        display: block;
+        margin: .5em 0; } }
+  /* line 79, sass/_pages/_index.scss */
   .main-header .container {
     padding: 10em 0; }
+    @media screen and (max-width: 768px) {
+      /* line 79, sass/_pages/_index.scss */
+      .main-header .container {
+        text-align: center;
+        width: 85%;
+        margin: 0 auto; } }
+    @media screen and (max-width: 750px) {
+      /* line 79, sass/_pages/_index.scss */
+      .main-header .container {
+        text-align: center;
+        width: 85%;
+        padding: 6em 0;
+        margin: 0 auto; } }
 
-/* line 60, sass/_pages/_index.scss */
+/* line 97, sass/_pages/_index.scss */
 #main-nav {
   text-align: center;
   font-size: 1.125em;
@@ -163,10 +198,10 @@ img {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 780px) {
-    /* line 60, sass/_pages/_index.scss */
+    /* line 97, sass/_pages/_index.scss */
     #main-nav {
       display: none; } }
-  /* line 76, sass/_pages/_index.scss */
+  /* line 113, sass/_pages/_index.scss */
   #main-nav .turtle-logo {
     width: 130px;
     height: auto;
@@ -174,22 +209,22 @@ img {
     transition: opacity .2s ease-in-out;
     -webkit-transition: opacity .2s ease-in-out;
     -moz-transition: opacity .2s ease-in-out; }
-    /* line 84, sass/_pages/_index.scss */
+    /* line 121, sass/_pages/_index.scss */
     #main-nav .turtle-logo:hover {
       opacity: .9; }
-  /* line 90, sass/_pages/_index.scss */
+  /* line 127, sass/_pages/_index.scss */
   #main-nav ul li {
     display: inline-block;
     text-transform: uppercase;
     vertical-align: middle;
     margin: 0 .5em; }
-    /* line 96, sass/_pages/_index.scss */
+    /* line 133, sass/_pages/_index.scss */
     #main-nav ul li .textlink {
       color: #1F3546;
       text-decoration: none;
       position: relative;
       padding: 8px 0; }
-      /* line 102, sass/_pages/_index.scss */
+      /* line 139, sass/_pages/_index.scss */
       #main-nav ul li .textlink:after {
         position: absolute;
         top: 100%;
@@ -205,24 +240,24 @@ img {
         -webkit-transform: translateY(10px);
         -moz-transform: translateY(10px);
         transform: translateY(10px); }
-      /* line 120, sass/_pages/_index.scss */
+      /* line 157, sass/_pages/_index.scss */
       #main-nav ul li .textlink:focus:after {
         opacity: 1;
         -webkit-transform: translateY(0px);
         -moz-transform: translateY(0px);
         transform: translateY(0px); }
-      /* line 128, sass/_pages/_index.scss */
+      /* line 165, sass/_pages/_index.scss */
       #main-nav ul li .textlink:hover {
         color: #3e6b8d;
         cursor: pointer; }
-        /* line 132, sass/_pages/_index.scss */
+        /* line 169, sass/_pages/_index.scss */
         #main-nav ul li .textlink:hover:after {
           opacity: 1;
           -webkit-transform: translateY(0px);
           -moz-transform: translateY(0px);
           transform: translateY(0px); }
 
-/* line 144, sass/_pages/_index.scss */
+/* line 181, sass/_pages/_index.scss */
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -233,21 +268,21 @@ img {
   -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); }
-  /* line 154, sass/_pages/_index.scss */
+  /* line 191, sass/_pages/_index.scss */
   #mobile-nav .mobile-nav-header {
     padding: 1em 2em; }
-  /* line 158, sass/_pages/_index.scss */
+  /* line 195, sass/_pages/_index.scss */
   #mobile-nav #mobile-nav-toggle {
     color: #1F3546; }
-    /* line 161, sass/_pages/_index.scss */
+    /* line 198, sass/_pages/_index.scss */
     #mobile-nav #mobile-nav-toggle:hover {
       color: #2f5069; }
-  /* line 166, sass/_pages/_index.scss */
+  /* line 203, sass/_pages/_index.scss */
   #mobile-nav .turtle-logo {
     float: left;
     width: 100px;
     height: auto; }
-  /* line 172, sass/_pages/_index.scss */
+  /* line 209, sass/_pages/_index.scss */
   #mobile-nav i {
     float: right;
     margin-top: .6em;
@@ -255,11 +290,11 @@ img {
     -webkit-transition: all .35s ease-out;
     -o-transition: all .35s ease-out;
     transition: all .35s ease-out; }
-  /* line 181, sass/_pages/_index.scss */
+  /* line 218, sass/_pages/_index.scss */
   #mobile-nav .nav-rotate {
     transform: rotate(90deg);
     color: #F84CA2; }
-  /* line 187, sass/_pages/_index.scss */
+  /* line 224, sass/_pages/_index.scss */
   #mobile-nav ul {
     background: #fff;
     display: block;
@@ -271,7 +306,7 @@ img {
     -webkit-transition: max-height .35s ease-out;
     -o-transition: max-height .35s ease-out;
     transition: max-height .35s ease-out; }
-    /* line 199, sass/_pages/_index.scss */
+    /* line 236, sass/_pages/_index.scss */
     #mobile-nav ul li {
       display: block;
       width: 100%;
@@ -280,101 +315,101 @@ img {
       box-sizing: border-box;
       border-bottom: 1px solid #f0f1f4;
       text-transform: uppercase; }
-      /* line 208, sass/_pages/_index.scss */
+      /* line 245, sass/_pages/_index.scss */
       #mobile-nav ul li a {
         color: #1F3546;
         text-decoration: none;
         font-size: 1.25em; }
-      /* line 214, sass/_pages/_index.scss */
+      /* line 251, sass/_pages/_index.scss */
       #mobile-nav ul li:first-child {
         border-top: 1px solid #f0f1f4; }
-  /* line 220, sass/_pages/_index.scss */
+  /* line 257, sass/_pages/_index.scss */
   #mobile-nav .expanded {
     max-height: 700px;
     overflow-y: scroll; }
   @media screen and (min-width: 781px) {
-    /* line 144, sass/_pages/_index.scss */
+    /* line 181, sass/_pages/_index.scss */
     #mobile-nav {
       display: none; } }
 
-/* line 231, sass/_pages/_index.scss */
+/* line 268, sass/_pages/_index.scss */
 .container {
   width: 960px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 3.75em 0; }
   @media screen and (max-width: 1000px) {
-    /* line 231, sass/_pages/_index.scss */
+    /* line 268, sass/_pages/_index.scss */
     .container {
       width: 85%; } }
 
-/* line 242, sass/_pages/_index.scss */
+/* line 279, sass/_pages/_index.scss */
 #ceremony, #weddingparty, #photos {
   text-align: center; }
-  /* line 245, sass/_pages/_index.scss */
+  /* line 282, sass/_pages/_index.scss */
   #ceremony h2, #weddingparty h2, #photos h2 {
     display: inline-block;
     margin: 0 .5em .5em .5em; }
-  /* line 250, sass/_pages/_index.scss */
+  /* line 287, sass/_pages/_index.scss */
   #ceremony h3, #weddingparty h3, #photos h3 {
     margin-bottom: 1.136em; }
-  /* line 254, sass/_pages/_index.scss */
+  /* line 291, sass/_pages/_index.scss */
   #ceremony .h2-lig, #weddingparty .h2-lig, #photos .h2-lig {
     display: inline-block; }
     @media screen and (max-width: 960px) {
-      /* line 254, sass/_pages/_index.scss */
+      /* line 291, sass/_pages/_index.scss */
       #ceremony .h2-lig, #weddingparty .h2-lig, #photos .h2-lig {
         width: 100px;
         height: auto; } }
     @media screen and (max-width: 768px) {
-      /* line 254, sass/_pages/_index.scss */
+      /* line 291, sass/_pages/_index.scss */
       #ceremony .h2-lig, #weddingparty .h2-lig, #photos .h2-lig {
         width: 75px; } }
-  /* line 267, sass/_pages/_index.scss */
+  /* line 304, sass/_pages/_index.scss */
   #ceremony .details, #weddingparty .details, #photos .details {
     font-style: italic;
     font-size: 1em;
     margin-bottom: 2em; }
-  /* line 273, sass/_pages/_index.scss */
+  /* line 310, sass/_pages/_index.scss */
   #ceremony h4, #weddingparty h4, #photos h4 {
     margin-bottom: .2em; }
-  /* line 277, sass/_pages/_index.scss */
+  /* line 314, sass/_pages/_index.scss */
   #ceremony p, #weddingparty p, #photos p {
     line-height: 1.7;
     font-size: 1.125em;
     max-width: 635px;
     margin: 0 auto 1em auto; }
 
-/* line 285, sass/_pages/_index.scss */
+/* line 322, sass/_pages/_index.scss */
 #weddingparty {
   background: #FFF0F8;
   color: #F84CA2; }
-  /* line 289, sass/_pages/_index.scss */
+  /* line 326, sass/_pages/_index.scss */
   #weddingparty ul {
     margin-bottom: 1.5em; }
-    /* line 293, sass/_pages/_index.scss */
+    /* line 330, sass/_pages/_index.scss */
     #weddingparty ul:last-child {
       margin-bottom: 0; }
-    /* line 297, sass/_pages/_index.scss */
+    /* line 334, sass/_pages/_index.scss */
     #weddingparty ul li {
       display: inline-block;
       margin: 0 .75em;
       width: 20%;
       vertical-align: top; }
       @media screen and (max-width: 768px) {
-        /* line 297, sass/_pages/_index.scss */
+        /* line 334, sass/_pages/_index.scss */
         #weddingparty ul li {
           width: 45%; } }
       @media screen and (max-width: 640px) {
-        /* line 297, sass/_pages/_index.scss */
+        /* line 334, sass/_pages/_index.scss */
         #weddingparty ul li {
           width: 100%; } }
-      /* line 311, sass/_pages/_index.scss */
+      /* line 348, sass/_pages/_index.scss */
       #weddingparty ul li img {
         margin-bottom: .5em;
         max-width: 100%;
         height: auto; }
-      /* line 317, sass/_pages/_index.scss */
+      /* line 354, sass/_pages/_index.scss */
       #weddingparty ul li p {
         line-height: 1.5; }
 
