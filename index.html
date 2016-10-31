@@ -23,6 +23,12 @@ $( document ).ready(function() {
 	});
 
 	$('#slider').slippry();
+
+
+
+	$('.homelink').on("click", function() {
+		$('#mobile-nav-items').toggleClass('expanded');
+	});
 });
 </script>
 
@@ -40,14 +46,14 @@ $( document ).ready(function() {
 		</nav>
 		<nav id="mobile-nav">
 			<div class="mobile-nav-header group">
-				<a href="index.html"><img src="images/turtle-logo.png" class="turtle-logo"></a>
+				<a href="index.html" class="homelink"><img src="images/turtle-logo.png" class="turtle-logo"></a>
 				<a href="#" id="mobile-nav-toggle"><i class="fa fa-2x fa-navicon" id="navicon"></i></a>
 			</div>
 			<ul id="mobile-nav-items">
-				<li><a class="textlink" href="#ceremony">The Ceremony</a></li>
+				<li><a class="textlink homelink" href="#ceremony">The Ceremony</a></li>
 				<li><a class="textlink" href="important-info.html">Important Info</a></li>
 				<li><a class="textlink" href="travel.html">Travel</a></li>
-				<li><a class="textlink" href="#photos">Photos</a></li>
+				<li><a class="textlink homelink" href="#photos">Photos</a></li>
 				<li><a class="textlink" href="registry.html">Registry</a></li>
 			</ul>
 		</nav>
