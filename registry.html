@@ -12,14 +12,6 @@
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/jquery-3.1.1.min.js"></script>
-
-		<script>
-			$( document ).ready(function() {
-			$(window).resize(function() {
-			    $('body').css("margin-top", $("#main-nav").outerHeight());
-			}).resize();
-			});
-		</script>
 	</head>
 	<body>
 		<nav id="main-nav">
@@ -29,6 +21,20 @@
 				<li><a href="index.html"><img src="images/turtle-logo.png" class="turtle-logo"></a></li>
 				<li><a class="textlink" href="travel.html">Travel</a></li>
 				<li><a class="textlink" href="#photos">Photos</a></li>
+				<li><a class="textlink" href="registry.html">Registry</a></li>
+			</ul>
+		</nav>
+
+		<nav id="mobile-nav">
+			<div class="mobile-nav-header group">
+				<a href="index.html"><img src="images/turtle-logo.png" class="turtle-logo"></a>
+				<a href="#" id="mobile-nav-toggle"><i class="fa fa-2x fa-navicon" id="navicon"></i></a>
+			</div>
+			<ul id="mobile-nav-items">
+				<li><a class="textlink" href="index.html#ceremony">The Ceremony</a></li>
+				<li><a class="textlink" href="important-info.html">Important Info</a></li>
+				<li><a class="textlink" href="travel.html">Travel</a></li>
+				<li><a class="textlink" href="index.html#photos">Photos</a></li>
 				<li><a class="textlink" href="registry.html">Registry</a></li>
 			</ul>
 		</nav>
