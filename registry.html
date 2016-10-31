@@ -12,6 +12,14 @@
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+$( document ).ready(function() {
+	$('#mobile-nav-toggle').on("click", function() {
+		$('#mobile-nav-items').toggleClass('expanded'),
+		$('#navicon').toggleClass('nav-rotate');
+	});
+});
+</script>
 	</head>
 	<body>
 		<nav id="main-nav">
