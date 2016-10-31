@@ -12,8 +12,8 @@
 		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="js/jquery-3.1.1.min.js"></script>
-		<link href="css/ninja-slider.css" rel="stylesheet" />
-    	<script src="js/ninja-slider.js" type="text/javascript"></script>
+		<script src="js/slippry.min.js"></script>
+	<link rel="stylesheet" href="css/slippry.css" />
 
 <script>
 $( document ).ready(function() {
@@ -21,6 +21,8 @@ $( document ).ready(function() {
 		$('#mobile-nav-items').toggleClass('expanded'),
 		$('#navicon').toggleClass('nav-rotate');
 	});
+
+	$('#slider').slippry();
 });
 </script>
 
@@ -143,21 +145,17 @@ $( document ).ready(function() {
 		<section id="photos">
 			<div class="container">
 				<img src="images/h2-left.png" class="h2-lig"><h2>Photos</h2><img src="images/h2-right.png" class="h2-lig">
-				<div id="ninja-slider">
-			        <div class="inner">
-			            <ul>
-			                <li><a class="ns-img" href="img/1.jpg"></a></li>
-			                <li><a class="ns-img" href="img/2.jpg"></a></li>
-			                <li><a class="ns-img" href="img/3.jpg"></a></li>
-			                <li><a class="ns-img" href="img/4.jpg"></a></li>
-			                <li><a class="ns-img" href="img/5.jpg"></a></li>
-			                <li><a class="ns-img" href="img/6.jpg"></a></li>
-			                <li><a class="ns-img" href="img/7.jpg"></a></li>
-			                <li><a class="ns-img" href="img/8.jpg"></a></li>
-			                <li><a class="ns-img" href="img/9.jpg"></a></li>
-			            </ul>
-			        </div>
-    			</div>
+	            <ul id="slider">
+	            	<li><a href="#slide1"><img src="img/1.jpg"></a></li>
+	                <li><a href="#slide2"><img src="img/2.jpg"></a></li>
+	                <li><a href="#slide3"><img src="img/3.jpg"></a></li>
+	                <li><a href="#slide4"><img src="img/4.jpg"></a></li>
+	                <li><a href="#slide5"><img src="img/5.jpg"></a></li>
+	                <li><a href="#slide6"><img src="img/6.jpg"></a></li>
+	                <li><a href="#slide7"><img src="img/7.jpg"></a></li>
+	                <li><a href="#slide8"><img src="img/8.jpg"></a></li>
+	                <li><a href="#slide9"><img src="img/9.jpg"></a></li>
+	            </ul>
 			</div>
 		</section>
 		<footer>
