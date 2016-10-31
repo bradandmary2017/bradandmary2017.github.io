@@ -14,22 +14,16 @@
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<link href="css/ninja-slider.css" rel="stylesheet" />
     	<script src="js/ninja-slider.js" type="text/javascript"></script>
-		<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'EatDrinkAndBeMatton',
-        accessToken: '11050467.b601391.b74f81838a5e468ca6594496a43534b8',
-    });
-    feed.run();
+
+<script>
+$( document ).ready(function() {
+	$('#mobile-nav-toggle').on("click", function() {
+		$('#mobile-nav-items').toggleClass('expanded'),
+		$('#navicon').toggleClass('nav-rotate');
+	});
+});
 </script>
 
-		<script>
-			$( document ).ready(function() {
-			$(window).resize(function() {
-			    $('body').css("margin-top", $("#main-nav").outerHeight());
-			}).resize();
-			});
-		</script>
 	</head>
 	<body>
 		<nav id="main-nav">
@@ -37,6 +31,19 @@
 				<li><a class="textlink" href="#ceremony">The Ceremony</a></li>
 				<li><a class="textlink" href="important-info.html">Important Info</a></li>
 				<li><a href="index.html"><img src="images/turtle-logo.png" class="turtle-logo"></a></li>
+				<li><a class="textlink" href="travel.html">Travel</a></li>
+				<li><a class="textlink" href="#photos">Photos</a></li>
+				<li><a class="textlink" href="registry.html">Registry</a></li>
+			</ul>
+		</nav>
+		<nav id="mobile-nav">
+			<div class="mobile-nav-header group">
+				<a href="index.html"><img src="images/turtle-logo.png" class="turtle-logo"></a>
+				<a href="#" id="mobile-nav-toggle"><i class="fa fa-2x fa-navicon" id="navicon"></i></a>
+			</div>
+			<ul id="mobile-nav-items">
+				<li><a class="textlink" href="#ceremony">The Ceremony</a></li>
+				<li><a class="textlink" href="important-info.html">Important Info</a></li>
 				<li><a class="textlink" href="travel.html">Travel</a></li>
 				<li><a class="textlink" href="#photos">Photos</a></li>
 				<li><a class="textlink" href="registry.html">Registry</a></li>
@@ -135,7 +142,7 @@
 		</section>
 		<section id="photos">
 			<div class="container">
-				<h2>Photos</h2>
+				<img src="images/h2-left.png" class="h2-lig"><h2>Photos</h2><img src="images/h2-right.png" class="h2-lig">
 				<div id="ninja-slider">
 			        <div class="inner">
 			            <ul>

@@ -1,5 +1,10 @@
 body {
 	-webkit-font-smoothing: antialiased;
+	margin-top: 131px;
+
+	@media screen and (max-width: 780px) {
+		margin-top: 105px;
+	}
 }
 
 img {
@@ -7,11 +12,25 @@ img {
 	height: auto;
 }
 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .main-header {
 	background: url('images/home-header-bg.jpg') no-repeat center center scroll;  
 	color: #fff;
 	width: 100%;
 	background-size: cover;
+
+	@media screen and (min-width: 1350px) {
+		min-height: 700px;
+	}
+
+	@media screen and (min-width: 1800px) {
+		min-height: 800px;
+	}
 
 	h1 {
 		text-indent: -9999px;
@@ -49,6 +68,10 @@ img {
 	z-index: 9999;
 	background: #fff;
 	@include box-shadow(0 1px 3px rgba(0,0,0,0.2));
+
+	@media screen and (max-width: 780px) {
+		display: none;
+	}
 
 	.turtle-logo {
 		width: 130px;
@@ -118,13 +141,100 @@ img {
 	}
 }
 
+#mobile-nav {
+
+	position: fixed;
+	top: 0;
+	background: #fff;
+	width: 100%;
+	z-index: 9999;
+	box-sizing: border-box;
+	@include box-shadow(0 1px 3px rgba(0,0,0,0.2));
+
+	.mobile-nav-header {
+		padding: 1em 2em;
+	}
+
+	#mobile-nav-toggle {
+		color: $navy;
+
+		&:hover {
+			color: lighten($navy, 10%);
+		}
+	}
+
+	.turtle-logo {
+		float: left;
+		width: 100px;
+		height: auto;
+	}
+
+	i {
+		float: right;		
+		margin-top: .6em;
+		-moz-transition: all .35s ease-out;
+		-webkit-transition: all .35s ease-out;
+		-o-transition: all .35s ease-out;
+		transition: all .35s ease-out;
+	}
+
+	.nav-rotate {
+		transform: rotate(90deg);
+		color: $hotpink;
+	}
+
+
+	ul {
+		background: #fff;
+		display: block;
+		width: 100%;
+		clear: both;
+		max-height: 0;
+		overflow: hidden;
+		-moz-transition: max-height .35s ease-out;
+		-webkit-transition: max-height .35s ease-out;
+		-o-transition: max-height .35s ease-out;
+		transition: max-height .35s ease-out;
+
+		li {
+			display: block;
+			width: 100%;
+			padding: 1em 2em;
+			text-align: center;
+			box-sizing: border-box;
+			border-bottom: 1px solid #f0f1f4;
+			text-transform: uppercase;
+
+			a {
+				color: $navy;
+				text-decoration: none;
+				font-size: 1.25em;
+			}
+
+			&:first-child {
+				border-top: 1px solid #f0f1f4;
+			}
+		}
+	}
+
+	.expanded {
+		max-height: 700px;
+		overflow-y: scroll;
+	}
+
+
+	@media screen and (min-width: 781px) {
+		display: none;
+	}
+}
+
 .container {
 	width: 960px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	padding: 3.75em 0;
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1000px) {
 		width: 85%;
 	}
 }
@@ -143,6 +253,15 @@ img {
 
 	.h2-lig {
 		display: inline-block;
+
+		@media screen and (max-width: 960px) {
+			width: 100px;
+			height: auto;
+		}
+
+		@media screen and (max-width: 768px) {
+			width: 75px;
+		}
 	}
 
 	.details {
@@ -178,9 +297,21 @@ img {
 		li {
 			display: inline-block;
 			margin: 0 .75em;
+			width: 20%;
+			vertical-align: top;
+
+			@media screen and (max-width: 768px) {
+				width: 45%;
+			}
+
+			@media screen and (max-width: 640px) {
+				width: 100%;
+			}
 
 			img {
 				margin-bottom: .5em;
+				max-width: 100%;
+				height: auto;
 			}
 
 			p {
